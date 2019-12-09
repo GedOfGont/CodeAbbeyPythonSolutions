@@ -14,4 +14,7 @@ def get_checksum(values):
 
 values = list(map(int, input().split()))
 
+if __name__ == "__get_checksum__":
+    get_checksum(values)
+
 print(get_checksum(values))
