@@ -2,12 +2,14 @@ amount_values = int(input())
 results = []
 
 def get_round_winner(player1, player2):
-    if(ord(player1) < ord(player2)):
-        if(ord(player1) - ord(player2) < -2):
+    player1_move = ord(player1)
+    player2_move = ord(player2)
+    if(player1_move < player2_move):
+        if(player1_move - player2_move < -2):
             return 2
         return 1
-    elif(ord(player1) > ord(player2)):
-        if(ord(player1) - ord(player2) > 2):
+    elif(player1_move > player2_move):
+        if(player1_move - player2_move > 2):
             return 1
         return 2
     else:
@@ -34,5 +36,5 @@ def get_match_winner(moves):
 for i in range(amount_values):
     moves = list(map(str, input().split()))
     results.append(get_match_winner(moves))
-    
+
 print(*results)
