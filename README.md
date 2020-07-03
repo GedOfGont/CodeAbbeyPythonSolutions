@@ -1,3 +1,3 @@
 # CodeAbbeyPythonSolutions
-Solutions of problems on codeabbey
+Solutions of the problems on codeabbey
 
