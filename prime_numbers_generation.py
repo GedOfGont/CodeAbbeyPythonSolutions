@@ -23,5 +23,6 @@ values = list(map(int, input().split()))
 for i in range(amount_values):
     results.append(prime_numbers[values[i]-1])
 
+
 print(*results)
 
